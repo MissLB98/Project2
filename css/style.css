@@ -1,0 +1,392 @@
+/************************************************************
+GENERAL
+************************************************************/
+
+*	{
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+body	{
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+	color: #5a5a5a;
+}
+
+p	{
+	font-size: .95em;
+	padding: 20px;
+	margin: 0;
+}
+
+h2,
+h3	{
+	text-align: center;
+	margin-top: 0;
+}
+
+h2	{
+	font-size: 1rem;
+	font-weight: 800;
+	margin: 50px 0;
+}
+
+h3	{
+	margin-top: 20px;
+}
+
+img	{
+	width: 100%;
+	max-width: 100%;
+	padding: 20px;
+}
+
+.profile-image	{
+	width: 80%;
+	margin: 10%;
+	padding: 30px;
+	border: 1px solid #ddd;
+}
+
+.name	{
+	font-family: 'Monoton', sans-serif;
+	text-shadow: -5px 5px 0px #fff;
+	color: #36a9ff;
+	background: #ccf;
+	font-size: 1.5em;
+	font-weight: 800;
+	border-radius: 10%;
+}
+
+
+/************************************************************
+LINKS
+************************************************************/
+
+a	{
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover	{
+	border: 3px solid #fff;
+}
+
+.name a,
+.main-nav a	{
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a	{
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 800;
+	border-right: 5px solid #fff;
+	border-left: 5px solid #fff;
+	/*margin-left: -42px;*/
+}
+
+.main-nav a:active	{
+	color: #000;
+}
+
+/************************************************************
+LAYOUT
+************************************************************/
+main	{
+	padding-bottom: 50px;
+}
+
+.main-header	{
+	width: 100%;
+	margin: 0;
+	padding: 1em 0;
+}
+
+/*---- NAVIGATION ----*/
+
+nav	{
+	background: #ff9494;
+	color: #fff;
+}
+
+.name	{
+	font-size: 1.75em;
+	text-align: center;
+	margin: 0;
+}
+
+.main-nav	{
+	margin-top: 5px;
+}
+
+.name,
+.main-nav,
+.main-nav li	{
+	margin: 20px;
+}
+
+/*-- Extra Section --*/
+
+.extra-section	{
+	background: #a99a55;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 2px;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 70%;
+	border-radius: 20%;
+}
+
+.extra-section li	{
+	display: block;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 50%;
+	transition: all .5s;
+}
+
+.extra-section li:hover	{
+	background: #000;
+	color: #fff;
+	text-weight: 800;
+	transform: scale(1.2) rotatex(40deg);
+}
+
+.extra-section h2	{
+	padding: 10px;
+	margin: 0;
+	font-family: 'Monoton', sans-serif;
+	font-size: 2.3em;
+	letter-spacing: 2px;
+}
+
+/************************************************************
+FOOTER
+************************************************************/
+
+.contact-heading	{
+	margin: 15px 0;
+}
+
+.main-footer	{
+	padding: 2em 0 0 0;
+	margin-top: 30px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.student-name,
+.to-top	{
+	font-weight: 800;
+	font-size: 1rem;
+	margin: 10px 10px;
+	padding: 0 10px;
+}
+
+.student-name	{
+	float: left;
+	padding: 0;
+	font-family: 'Frijole', sans-serif;
+}
+
+.to-top	{
+	float: right;
+	text-transform: uppercase;
+	/*margin: 10px 10px;*/
+}
+
+
+footer p a	{
+	font-weight: bold;
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/************************************************************
+MEDIA QUERIES
+************************************************************/
+
+@media (min-width: 768px)	{
+	
+	h1 .name	{
+		margin-top: 0;
+		}
+
+	.wrap	{
+		width: 90%;
+		margin: 0 auto;
+		min-height: 100vh;
+		}
+
+	.main-nav	{
+		text-align: center;
+		}
+
+	.main-nav li	{
+		display: inline-block;
+		margin: 0 auto;
+		}
+
+	.h2-portfolio	{
+		padding-top: 60px;
+		}
+
+	.container	{
+		border-top: 1px solid #ccc;
+		}
+
+	.profile-image	{
+		width: 40%;
+		max-width: 345.6px;
+		float: right;
+		margin: 0;
+		padding: 5px;
+		}
+
+	.intro p	{
+		float: left;
+		width: 60%;
+		text-align: center;
+		padding-top: 70px;
+		}
+
+	img	{
+		max-width: 691.2px;
+		margin: 0;
+		padding: 5px;
+	}
+
+	.container	{
+		clear: both;
+
+		}
+
+	.col	{
+		width: 100%;
+		margin: auto;
+		display: inline-block;
+		}
+	
+	.primary	{
+		float: left;
+		width: 50%;
+		}
+
+	.secondary	{
+		float: right;
+		width: 50%;
+		}
+
+	/*.portfolio-items	{
+		width: 100%;
+		max-height: 342.6px;
+		margin: auto;
+		}*/
+
+	.portfolio-items p	{
+		padding: 5px;
+		}
+
+	span,
+	.DesktopContainer	{
+		display: none;
+		}
+	
+	.bottom-nav	{
+		float: right;
+		}
+
+	.bottom-nav li	{
+		margin: 5px;
+		padding: 20px;
+		display: inline-block;
+		vertical-align: top;
+		}
+
+	.student-name	{
+		padding-top: 16px;
+		}
+
+	.replacement-text	{
+		font-weight: bolder;
+		font-size: 1rem;
+		}
+
+
+}
+
+
+@media (max-width: 767px)	{
+	.bottom-nav,
+	.DesktopContainer	{
+		display: none;
+		}
+}
+
+
+
+@media (min-width: 1024px)	{
+	
+	.wrap	{
+		
+	}
+
+	.name,
+	.main-nav,
+	.main-nav li	{
+		display: inline-block;
+		}
+	
+	.main-nav	{
+		float: right;
+		}
+
+	.main-nav li	{
+		margin: 0 15px;
+		}
+
+	.col	{
+		display: none;
+		}
+
+	.DesktopContainer	{
+		display: inline-block;
+		}
+
+	.portfolio-items	{
+		float: left;
+		/*display: inline-block;*/
+		max-width: 33.33%;
+		}
+
+	.DesktopContainer p	{
+		padding: 5px;
+		font-size: 14px;
+		}
+
+}
+
+@media (min-width: 1300px)	{
+	
+	.profile-image	{
+		margin-right: 40px;
+		}
+
+	.main-nav	{
+		margin-right: 40px;
+		}
+}
