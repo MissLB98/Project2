@@ -133,6 +133,11 @@ nav	{
 	margin: 20px;
 }
 
+.bottom-nav,
+.DesktopContainer	{
+	display: none;
+}
+
 /*-- Extra Section --*/
 
 .extra-section	{
@@ -157,7 +162,7 @@ nav	{
 .extra-section li:hover	{
 	background: #000;
 	color: #fff;
-	text-weight: 800;
+	font-weight: 800;
 	transform: scale(1.2) rotatex(40deg);
 }
 
@@ -310,15 +315,16 @@ MEDIA QUERIES
 		float: right;
 		}
 
+	.bottom-nav,
 	.bottom-nav li	{
 		margin: 5px;
-		padding: 20px;
+		padding: 10px;
 		display: inline-block;
 		vertical-align: top;
 		}
 
 	.student-name	{
-		padding-top: 16px;
+		padding-top: 20px;
 		}
 
 	.replacement-text	{
@@ -330,17 +336,21 @@ MEDIA QUERIES
 }
 
 
-@media (max-width: 767px)	{
-	.bottom-nav,
-	.DesktopContainer	{
-		display: none;
-		}
-}
-
-
-
 @media (min-width: 1024px)	{
 	
+
+	.bottom-nav,
+	.bottom-nav li	{
+		margin: 5px;
+		padding: 20px;
+		display: inline-block;
+		vertical-align: top;
+		}
+
+	.student-name	{
+		padding-top: 45px;
+		}
+
 	.wrap	{
 		
 	}
